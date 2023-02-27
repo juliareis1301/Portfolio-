@@ -1,0 +1,511 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    scroll-behavior: smooth
+}
+
+ul {
+    margin: 0
+}
+
+#nav {
+    list-style-type: none;
+    background-color: #e5bfae;
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+#nav li {
+    display: inline-flex
+}
+
+#nav li a {
+    display: inline-block;
+    text-decoration: none;
+    transition: background 1s;
+    color: #332f2f;
+    padding: 15px;
+    border-right: none
+}
+
+#nav li a:hover {
+    background-color: #FF725E
+}
+
+#inicio {
+    background: #f8efda;
+    height: 100vh;
+    display: flex;
+    align-items: center
+}
+
+.altura-ajuste {
+    width: 100%
+}
+
+.ajustador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.apresentacao {
+    color: #332f2f;
+    display: flex;
+    justify-content: space-around
+}
+
+.descricao {
+    font-size: 35px;
+    font-weight: 400px;
+    margin: 75px;
+    letter-spacing: .2rem;
+    overflow: hidden
+}
+
+.meu-nome {
+    font-size: 65px;
+    border-right: 2px solid rgba(37, 34, 34, 0.75);
+    margin: 0 auto;
+    /*white-space: nowrap;*/
+    overflow: hidden
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 18em
+    }
+}
+
+.typing-animation {
+    animation: blink 500ms infinite normal, typing 4s steps(20) 1s normal
+}
+
+@keyframes blink {
+    from {
+        border-right-color: rgba (37, 34, 34, 0.75)
+    }
+
+    to {
+        border-right-color: transparent
+    }
+}
+
+@keyframes desenhoAnimacao {
+    from {
+        margin-left: 25px
+    }
+
+    to {
+        margin-right: 25px
+    }
+}
+
+
+.desenho2 {
+    animation: desenhoAnimacao 2.1s infinite alternate-reverse linear
+}
+
+img {
+    width: 500px;
+    height: 500px
+}
+
+@media screen and (max-width:1200px) {
+    #inicio {
+        background-color: #f8efda;
+        height: auto
+    }
+
+    .ajustador {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 50px
+    }
+
+    .desenho {
+        padding: 100px 0
+    }
+
+    .apresentacao {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #inicio {
+        display: flex;
+        justify-content:center;
+    }
+
+    .desenho {
+        display: flex;
+        justify-content: center
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .descricao{
+        padding-top: 70px;
+    }
+
+    .dev {
+        text-align: center;
+        font-size: 25px;
+    }
+    #inicio {
+        display: flex;
+        background-color: #f8efda;
+        width: min-content;
+    }
+    *{
+        max-width: -webkit-fill-available;
+    }
+
+    .desenho {
+        padding: 0%;
+    }
+
+
+
+}
+
+#sobre-mim {
+    width: 100%;
+    background-color: #c8584f
+}
+
+.ajustador-2 {
+    padding: 144px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 67px;
+    max-width: 1064px;
+    margin: 0 auto
+}
+
+.sobre-mim-title {
+    font-size: 50px;
+    font-weight: 400;
+    color: #fff
+}
+
+.minha-apresentacao {
+    text-indent: 30px;
+    font-size: 20px;
+    max-width: 609.25px;
+    color: #fff
+}
+
+.minha-foto {
+    width: 313px;
+    height: 368px;
+    cursor: pointer;
+    transition: ease 1s;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #f8efda
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+@media screen and (max-width:1200px) {
+    #sobre-mim {
+        text-indent: 0
+    }
+
+    .ajustador-2 {
+        display: flex;
+        justify-content: center;
+        text-align: center
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .ajustador-2 {
+        display: flex
+    }
+}
+
+#habilidades {
+    width: 100%;
+    height: 100vh;
+    background-color: #f8efda
+}
+
+.habilidades-pd h2 {
+    text-align: center;
+    margin: 0;
+    padding: 45px;
+    padding: 55px;
+    padding-bottom: 150px
+}
+
+.container-skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 37px;
+    max-width: 100%
+}
+
+.skill-box {
+    height: 95px;
+    width: 95px;
+    background-color: #C4C4C4;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease .3s
+}
+
+.skill-box:hover {
+    background-color: #fff;
+    transform: scale(1.05)
+}
+
+.skill-box .icones-habilidades {
+    transition: ease-in-out .3s
+}
+
+.skill-box:hover .icones-habilidades {
+    opacity: 0
+}
+
+.icons-habilidades {
+    width: 90px;
+    height: max-content;
+    max-width: 100%;
+    display: block
+}
+
+.hide {
+    display: none
+}
+
+@media screen and (max-width:1200px) {
+    #habilidades {
+        display: flex;
+        justify-content: center
+    }
+}
+
+#legenda {
+    background-color: #c8584f;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px;
+    color: #f8efda;
+    height: 20px;
+    width: auto
+}
+
+#legenda1 {
+    background-color: #c8584f;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px;
+    color: #f8efda;
+    height: 20px;
+    width: auto
+}
+
+#legenda2 {
+    background-color: #c8584f;
+    border-radius: 8px;
+    text-align: center;
+    margin: 15px;
+    color: #f8efda;
+    height: 20px;
+    width: auto
+}
+
+#legenda3 {
+    background-color: #c8584f;
+    border-radius: 8px;
+    text-align: center;
+    margin: 15px;
+    color: #f8efda;
+    height: 20px;
+    width: auto
+}
+
+#legenda4 {
+    background-color: #c8584f;
+    border-radius: 8px;
+    text-align: center;
+    margin: 15px;
+    color: #f8efda;
+    height: 20px;
+    width: auto
+}
+
+#legenda5 {
+    background-color: #c8584f;
+    border-radius: 8px;
+    text-align: center;
+    margin: 15px;
+    color: #f8efda;
+    height: 20px;
+    width: auto
+}
+
+.projeto {
+    color: #332f2f;
+    font-size: 50px;
+    font-weight: 400
+}
+
+#projetos {
+    height: 100%;
+    width: 100%;
+    background-color: #c8584f
+}
+
+.projeto {
+    margin-top: 93px
+}
+
+.project {
+    font-weight: 400;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 45px
+}
+
+.projetos h2 {
+    padding-bottom: 70px
+}
+
+button {
+    padding: 10px 100px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #c8584f;
+    background-color: #f8efda;
+    border: none;
+    transition: ease-in-out .3s;
+    font-weight: 600
+}
+
+button:hover {
+    background-color: #e5bfae
+}
+
+.projetos a {
+    display: inline
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: ease-in-out .3s;
+    color: #f8efda
+}
+
+a:hover {
+    letter-spacing: 2px
+}
+
+.pro {
+    background-color: #f8efda;
+    height: 195px;
+    width: 310px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: ease-in-out .3s
+}
+
+.pro div p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    color: #C4C4C4
+}
+
+.pro:hover {
+    letter-spacing: 5px
+}
+
+.github-link {
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 93px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px
+}
+
+.escondido {
+    opacity: 0;
+    display: none;
+    transition: 1000ms
+}
+
+.projetos-itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29.5px;
+    width: 100%;
+    justify-content: center
+}
+
+.footer {
+    width: 100%;
+    background-color: #e5bfae;
+    max-height: max-content
+}
+
+.footer-conteiner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-right: 15px;
+    margin-top: 5px
+}
+
+.redes {
+    width: 50px;
+    height: 50px
+}
