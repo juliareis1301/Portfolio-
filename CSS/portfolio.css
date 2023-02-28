@@ -171,7 +171,7 @@ img {
     #inicio {
         display: flex;
         background-color: #f8efda;
-        width: min-content;
+       /* width: min-content;*/
     }
     *{
         max-width: -webkit-fill-available;
