@@ -448,6 +448,12 @@ a:hover {
     transition: ease-in-out .3s
 }
 
+.calculadora {
+    height:205px;
+    width: 320px; 
+}
+
+
 .pro div p {
     font-family: 'Fira Sans', sans-serif;
     font-size: 20px;
