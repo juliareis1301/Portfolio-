@@ -453,6 +453,10 @@ a:hover {
     width: 320px; 
 }
 
+.pokedex{
+    height: 250px;
+    width: 305px;
+}
 
 .pro div p {
     font-family: 'Fira Sans', sans-serif;
