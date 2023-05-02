@@ -1,4 +1,4 @@
-<h1>:art:<a href="https://juliareis-portifolio1.netlify.app/"> Portfólio</a></h1>
+<h1>:art:<a href="https://juliareis-portfolio1.netlify.app/"> Portfólio</a></h1>
 
 <div style="display:inline_block">
 
